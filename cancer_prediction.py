@@ -44,7 +44,7 @@ y = df['Lung Cancer']
 X = pd.get_dummies(X, drop_first=True)  
 
 # Dividindo o conjunto de dados em treinamento e teste (80% para teste)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Criando e treinando o modelo Naive Bayes Gaussiano
 modelo = GaussianNB()
