@@ -20,8 +20,8 @@ INSTALAÇÃO DAS DEPENDÊNCIAS:
    - No Windows: venv\Scripts\activate
    - No Linux/Mac: source venv/bin/activate
 
-2. Instale as dependências usando o arquivo requirements.txt:
-   - pip install -r requirements.txt
+2. Instale as dependências usando o prompt do seu editor de código:
+   - pip install pandas scikit-learn
 
 COMO RODAR O CÓDIGO:
 1. Abra o terminal ou prompt de comando.
