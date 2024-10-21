@@ -1,7 +1,7 @@
-import pandas as pd  
-from sklearn.model_selection import train_test_split  
-from sklearn.naive_bayes import GaussianNB  
-from sklearn.metrics import accuracy_score
+import pandas as pd   # Biblioteca para manipulação e análise de dados (DataFrames).
+from sklearn.model_selection import train_test_split # Função para dividir o dataset em conjuntos de treino e teste. 
+from sklearn.naive_bayes import GaussianNB  # Algoritmo Naive Bayes Gaussiano, usado para classificação.
+from sklearn.metrics import accuracy_score # Função para calcular a precisão do modelo.
 
 # Cabeçalho explicativo
 """
