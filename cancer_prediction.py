@@ -12,22 +12,22 @@ Objetivo: Utilizar um modelo de Naive Bayes para prever a probabilidade de uma p
 
 # Dados de entrada
 dados = {
-    'Gender': ['M', 'F', 'M', 'M', 'F', 'F', 'M', 'M', 'F', 'F'], 
-    'Age': [65, 45, 50, 60, 48, 54, 67, 70, 58, 62],
-    'Smoking': [2, 1, 2, 2, 1, 1, 2, 2, 1, 2],
-    'Yellow fingers': [2, 1, 2, 2, 1, 1, 2, 2, 1, 1],
-    'Anxiety': [1, 2, 2, 1, 1, 2, 2, 1, 2, 1],
-    'Peer_pressure': [2, 1, 1, 2, 2, 1, 2, 1, 1, 2],
-    'Chronic Disease': [1, 2, 2, 1, 1, 2, 2, 1, 2, 1],
-    'Fatigue': [2, 1, 2, 2, 1, 1, 2, 2, 1, 2],
-    'Allergy': [1, 2, 2, 1, 1, 2, 1, 1, 2, 1],
-    'Wheezing': [2, 1, 2, 2, 1, 2, 2, 1, 2, 1],
-    'Alcohol': [1, 2, 1, 2, 1, 2, 1, 2, 2, 1],
-    'Coughing': [2, 1, 2, 2, 1, 2, 1, 1, 2, 1],
-    'Shortness of Breath': [2, 1, 2, 2, 1, 2, 1, 1, 2, 1],
-    'Swallowing Difficulty': [1, 2, 2, 1, 1, 2, 1, 1, 2, 1],
-    'Chest pain': [2, 1, 2, 1, 2, 2, 1, 1, 2, 1],
-    'Lung Cancer': ['YES', 'NO', 'YES', 'YES', 'NO', 'NO', 'YES', 'NO', 'YES', 'YES']  
+    'Gender': ['M', 'F', 'M', 'M', 'F', 'F', 'M', 'M', 'F', 'F'], # Gênero: M (Masculino), F (Feminino)
+    'Age': [65, 45, 50, 60, 48, 54, 67, 70, 58, 62], # Idade dos pacientes
+    'Smoking': [2, 1, 2, 2, 1, 1, 2, 2, 1, 2], # Fuma: 1 (Não), 2 (Sim)
+    'Yellow fingers': [2, 1, 2, 2, 1, 1, 2, 2, 1, 1], # Dedos amarelados: 1 (Não), 2 (Sim)
+    'Anxiety': [1, 2, 2, 1, 1, 2, 2, 1, 2, 1], # Ansiedade: 1 (Não), 2 (Sim)
+    'Peer_pressure': [2, 1, 1, 2, 2, 1, 2, 1, 1, 2], # Pressão de colegas: 1 (Não), 2 (Sim)
+    'Chronic Disease': [1, 2, 2, 1, 1, 2, 2, 1, 2, 1], # Doença crônica: 1 (Não), 2 (Sim)
+    'Fatigue': [2, 1, 2, 2, 1, 1, 2, 2, 1, 2], # Fadiga: 1 (Não), 2 (Sim)
+    'Allergy': [1, 2, 2, 1, 1, 2, 1, 1, 2, 1], # Alergia: 1 (Não), 2 (Sim)
+    'Wheezing': [2, 1, 2, 2, 1, 2, 2, 1, 2, 1], # Chiado no peito: 1 (Não), 2 (Sim)
+    'Alcohol': [1, 2, 1, 2, 1, 2, 1, 2, 2, 1], # Consumo de álcool: 1 (Não), 2 (Sim)
+    'Coughing': [2, 1, 2, 2, 1, 2, 1, 1, 2, 1], # Tosse: 1 (Não), 2 (Sim)
+    'Shortness of Breath': [2, 1, 2, 2, 1, 2, 1, 1, 2, 1], # Falta de ar: 1 (Não), 2 (Sim)
+    'Swallowing Difficulty': [1, 2, 2, 1, 1, 2, 1, 1, 2, 1], # Dificuldade para engolir: 1 (Não), 2 (Sim)
+    'Chest pain': [2, 1, 2, 1, 2, 2, 1, 1, 2, 1], # Dor no peito: 1 (Não), 2 (Sim)
+    'Lung Cancer': ['YES', 'NO', 'YES', 'YES', 'NO', 'NO', 'YES', 'NO', 'YES', 'YES']  # Diagnóstico de câncer de pulmão: YES (Sim), NO (Não)
 }
 
 # Criando o DataFrame
