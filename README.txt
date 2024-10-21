@@ -27,7 +27,7 @@ COMO RODAR O CÓDIGO:
 1. Abra o terminal ou prompt de comando.
 2. Navegue até a pasta onde o script está localizado.
 3. Execute o seguinte comando:
-   - python nome_do_arquivo.py
+   - python cancer_prediction.py
 
 ESTRUTURA DOS DADOS:
 Os dados incluem as seguintes colunas:
