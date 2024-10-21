@@ -6,7 +6,7 @@ DESCRIÇÃO DO PROJETO:
 O objetivo do projeto é treinar um modelo de aprendizado de máquina para prever o diagnóstico de câncer de pulmão. O modelo é desenvolvido utilizando a biblioteca scikit-learn e os dados são manipulados com pandas.
 
 FUNCIONALIDADES:
-- Divisão dos dados: 20% para treino, 80% para teste
+- Divisão dos dados: 80% para treino, 20% para teste
 - Algoritmo Naive Bayes Gaussiano para predição
 - Cálculo da acurácia do modelo
 
